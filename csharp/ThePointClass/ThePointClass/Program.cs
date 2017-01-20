@@ -4,10 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
-Define a Point class
-Define a method to return the distance between the origin (0, 0) and a created point
-*/
 namespace ThePointClass
 {
     class Program
