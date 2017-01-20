@@ -14,8 +14,8 @@ namespace ThePointClass
     {
         static void Main(string[] args)
         {
-            int x = getPoint("x");
-            int y = getPoint("y");
+            int x = GetPoint("x");
+            int y = GetPoint("y");
 
             Point point = new Point(x, y);
             Console.WriteLine(point.Distance());
@@ -23,7 +23,7 @@ namespace ThePointClass
             Console.ReadKey();
         }
 
-        private static int getPoint(string pointName)
+        private static int GetPoint(string pointName)
         {
             int point;
             Console.Write($"Define {pointName} position:");
