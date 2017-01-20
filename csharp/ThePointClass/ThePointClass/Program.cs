@@ -14,33 +14,29 @@ namespace ThePointClass
     {
         static void Main(string[] args)
         {
-            int x;
-            int y;
-
-            Console.Write("Define x position:");
-            try
-            {
-                x = Int32.Parse(Console.ReadLine());
-            }
-            catch (FormatException e)
-            {
-                throw new FormatException("Int expected", e);
-            }
-
-            Console.Write("Define y position:");
-            try
-            {
-                y = Int32.Parse(Console.ReadLine());
-            }
-            catch (FormatException e)
-            {
-                throw new FormatException("Int expected", e);
-            }
+            int x = getPoint("x");
+            int y = getPoint("y");
 
             Point point = new Point(x, y);
             Console.WriteLine(point.Distance());
 
             Console.ReadKey();
+        }
+
+        private static int getPoint(string pointName)
+        {
+            int point;
+            Console.Write($"Define {pointName} position:");
+            try
+            {
+                point = Int32.Parse(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                throw new FormatException("Int expected", e);
+            }
+
+            return point;
         }
     }
 }
