@@ -10,24 +10,26 @@ namespace TheBookClass
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 2; i++) {
+            for (int i = 1; i <= 2; i++) {
+                Console.WriteLine("Book " + i + ":");
                 Book book = AddBook();
-                book.DisplayBookData();
+                Console.WriteLine(book.DisplayBookData());
             }
+            Console.ReadKey();
         }
 
         private static Book AddBook()
         {
-            string bookTitle = getBookData("Title");
-            string bookAuthor = getBookData("Author");
-            string bookPrice = getBookData("Price");
+            string bookTitle = GetBookData("Title");
+            string bookAuthor = GetBookData("Author");
+            double bookPrice = double.Parse(GetBookData("Price"));
 
             return new Book(bookTitle, bookAuthor, bookPrice);
         }
 
-        private static string getBookData(string expectedData)
+        private static string GetBookData(string expectedData)
         {
-            Console.WriteLine($"{expectedData}:");
+            Console.WriteLine($"{expectedData}?");
             return Console.ReadLine();
         }
     }
