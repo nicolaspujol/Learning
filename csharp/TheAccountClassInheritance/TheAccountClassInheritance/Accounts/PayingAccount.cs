@@ -15,11 +15,12 @@ namespace TheAccountClassInheritance
 
         public new void Credit(double amount)
         {
-            _balance += amount - 5;
+            base.Credit(amount);
+            base.Debit(_fee);
         }
         public new void Debit(double amount)
         {
-            _balance -= amount + 5;
+            base.Debit(amount + _fee);
         }
     }
 }
