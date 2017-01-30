@@ -9,9 +9,9 @@ namespace TheBookClass
         private double _price;
 
         public Book(string title, string author, double price) {
-            this._title = title;
-            this._author = author;
-            this._price = price;
+            _title = title;
+            _author = author;
+            _price = price;
         }
 
         public string DisplayBookData() {
