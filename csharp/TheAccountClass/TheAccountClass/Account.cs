@@ -13,6 +13,12 @@ namespace TheAccountClass
         private Customer _owner;
         private static int _accountQty = 0;
 
+        public double Balance
+        {
+            get { return _balance; } 
+            set { }
+        }
+
         public Account(Customer owner) {
             _balance = 0;
             _accountNumber = ++_accountQty;
@@ -23,19 +29,9 @@ namespace TheAccountClass
         {
             _balance += amount;
         }
-        public void Credit(double amount, Account account)
-        {
-            _balance += amount;
-            account._balance -= amount;
-        }
         public void Debit(double amount)
         {
             _balance -= amount;
-        }
-        public void Debit(double amount, Account account)
-        {
-            _balance -= amount;
-            account._balance += amount;
         }
         public string DisplayCurrentAccountData()
         {

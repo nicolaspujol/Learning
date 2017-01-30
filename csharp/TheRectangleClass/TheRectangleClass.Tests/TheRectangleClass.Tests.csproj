@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CAA60DB2-43D8-4262-951C-94EFDF32EE72}</ProjectGuid>
+    <ProjectGuid>{2AB0C896-B8A5-4AFC-831B-0F5BB306999C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TheAccountClass.Tests</RootNamespace>
-    <AssemblyName>TheAccountClass.Tests</AssemblyName>
+    <RootNamespace>TheRectangleClass.Tests</RootNamespace>
+    <AssemblyName>TheRectangleClass.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -45,22 +45,18 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
-          <Private>False</Private>
-        </Reference>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Account.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="PaymentService.cs" />
+    <Compile Include="Rectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TheAccountClass\TheAccountClass.csproj">
-      <Project>{97eb831b-5aca-4bbb-b5a9-5ab910e7a3d1}</Project>
-      <Name>TheAccountClass</Name>
+    <ProjectReference Include="..\TheRectangleClass\TheRectangleClass.csproj">
+      <Project>{eee89c1f-16f7-49a7-a8ff-5e72de869398}</Project>
+      <Name>TheRectangleClass</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

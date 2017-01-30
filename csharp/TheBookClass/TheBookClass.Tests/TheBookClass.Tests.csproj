@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CAA60DB2-43D8-4262-951C-94EFDF32EE72}</ProjectGuid>
+    <ProjectGuid>{EE8791F2-A69F-4540-9B47-7EB01E1E5691}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TheAccountClass.Tests</RootNamespace>
-    <AssemblyName>TheAccountClass.Tests</AssemblyName>
+    <RootNamespace>TheBookClass.Tests</RootNamespace>
+    <AssemblyName>TheBookClass.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -45,22 +45,18 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
-          <Private>False</Private>
-        </Reference>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Account.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="PaymentService.cs" />
+    <Compile Include="Book.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TheAccountClass\TheAccountClass.csproj">
-      <Project>{97eb831b-5aca-4bbb-b5a9-5ab910e7a3d1}</Project>
-      <Name>TheAccountClass</Name>
+    <ProjectReference Include="..\TheBookClass\TheBookClass.csproj">
+      <Project>{d1b92389-14f2-4ba2-b34d-f3d3c7ac1859}</Project>
+      <Name>TheBookClass</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
