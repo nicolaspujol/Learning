@@ -19,13 +19,13 @@ namespace TheRectangleClass.Tests
             Assert.AreEqual(12, rect.Area());
         }
         [TestMethod]
-        public void IsSquareTrue()
+        public void IsSquare_SameWidthAndHeight_ShouldReturnTrue()
         {
             Rectangle rect = new Rectangle(3, 3);
             Assert.AreEqual(true, rect.IsSquare());
         }
         [TestMethod]
-        public void IsSquareFalse()
+        public void IsSquare_DifferentWidthAndHeight_ShouldReturnFalse()
         {
             Rectangle rect = new Rectangle(3, 4);
             Assert.AreEqual(false, rect.IsSquare());
