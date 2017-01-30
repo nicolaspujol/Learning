@@ -51,7 +51,9 @@ namespace TheAccountClass.Tests
             Customer customer2 = new Customer("5678", "firstName2", "lastName2", "phone2");
             Account account2 = new Account(customer2);
             createdAccounts += 2;
-            account.Credit(1000, account2);
+
+            PaymentService paymentService = new PaymentService();
+            paymentService.SubmitPayment(account2, account, 1000);
 
             Assert.AreEqual("Account number: " + (createdAccounts - 1) + "\nAccount balance: 1000", account.DisplayCurrentAccountData());
             Assert.AreEqual("Account number: " + createdAccounts + "\nAccount balance: -1000", account2.DisplayCurrentAccountData());
@@ -74,7 +76,9 @@ namespace TheAccountClass.Tests
             Customer customer2 = new Customer("5678", "firstName2", "lastName2", "phone2");
             Account account2 = new Account(customer2);
             createdAccounts += 2;
-            account.Debit(1000, account2);
+
+            PaymentService paymentService = new PaymentService();
+            paymentService.SubmitPayment(account, account2, 1000);
 
             Assert.AreEqual("Account number: " + (createdAccounts - 1) + "\nAccount balance: -1000", account.DisplayCurrentAccountData());
             Assert.AreEqual("Account number: " + createdAccounts + "\nAccount balance: 1000", account2.DisplayCurrentAccountData());

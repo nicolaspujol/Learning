@@ -29,19 +29,9 @@ namespace TheAccountClass
         {
             _balance += amount;
         }
-        public void Credit(double amount, Account account)
-        {
-            PaymentService paymentService = new PaymentService();
-            paymentService.SubmitPayment(account, this, amount);
-        }
         public void Debit(double amount)
         {
             _balance -= amount;
-        }
-        public void Debit(double amount, Account account)
-        {
-            PaymentService paymentService = new PaymentService();
-            paymentService.SubmitPayment(this, account, amount);
         }
         public string DisplayCurrentAccountData()
         {
