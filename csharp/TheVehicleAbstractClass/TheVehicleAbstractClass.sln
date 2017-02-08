@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheVehicleAbstractClass", "TheVehicleAbstractClass\TheVehicleAbstractClass.csproj", "{B32F0F65-63F1-45D2-8DD4-607836EC3D4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheVehicleAbstractClass.Unit.Tests", "TheVehicleAbstractClass.Unit.Tests\TheVehicleAbstractClass.Unit.Tests.csproj", "{7DC6BCDC-F876-4914-BF29-BF2F7AEE33F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B32F0F65-63F1-45D2-8DD4-607836EC3D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B32F0F65-63F1-45D2-8DD4-607836EC3D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B32F0F65-63F1-45D2-8DD4-607836EC3D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B32F0F65-63F1-45D2-8DD4-607836EC3D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC6BCDC-F876-4914-BF29-BF2F7AEE33F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC6BCDC-F876-4914-BF29-BF2F7AEE33F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC6BCDC-F876-4914-BF29-BF2F7AEE33F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC6BCDC-F876-4914-BF29-BF2F7AEE33F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
