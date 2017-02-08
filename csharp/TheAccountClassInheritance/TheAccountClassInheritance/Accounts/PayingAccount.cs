@@ -8,10 +8,16 @@ namespace TheAccountClassInheritance
 {
     public class PayingAccount : Account
     {
-        private const int _fee = 5;
+        private const double _fee = 5;
 
         public PayingAccount() : base() { }
         public PayingAccount(double balance) : base(balance) { }
+
+        public double Fee
+        {
+            get { return _fee; }
+            set { }
+        }
 
         public new void Credit(double amount)
         {

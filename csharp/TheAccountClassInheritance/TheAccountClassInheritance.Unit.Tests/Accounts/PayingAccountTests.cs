@@ -9,16 +9,16 @@ namespace TheAccountClassInheritance.Unit.Tests.Accounts
         [TestMethod]
         public void CreateAccount_WithoutParams_ShouldSetBalanceToZero()
         {
-            PayingAccount account = new PayingAccount(13);
-            Assert.AreEqual(13, account.Balance);
+            PayingAccount account = new PayingAccount();
+            Assert.AreEqual(0, account.Balance);
         }
         [TestMethod]
         public void Credit_WithAmount_ShouldIncreaseBalanceAndApplyFees()
         {
             PayingAccount account = new PayingAccount(999);
             account.Credit(1000);
-
-            Assert.AreEqual(1994, account.Balance);
+            
+            Assert.AreEqual(1999 - account.Fee, account.Balance);
         }
         [TestMethod]
         public void Debit_WithAmount_ShouldDecreaseBalanceAndApplyFees()
@@ -26,7 +26,7 @@ namespace TheAccountClassInheritance.Unit.Tests.Accounts
             PayingAccount account = new PayingAccount(1000);
             account.Debit(999);
 
-            Assert.AreEqual(-4, account.Balance);
+            Assert.AreEqual(1 - account.Fee, account.Balance);
         }
     }
 }
