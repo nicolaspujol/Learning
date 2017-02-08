@@ -18,7 +18,7 @@ namespace TheVehicleAbstractClass.Unit.Tests
         }
 
         [TestMethod]
-        public void Start_WithoutParams_ShouldStartTheCar()
+        public void Start_ShouldStartTheCar()
         {
             Car c = new Car(1999, 10000);
 
@@ -26,7 +26,7 @@ namespace TheVehicleAbstractClass.Unit.Tests
         }
 
         [TestMethod]
-        public void Accelerate_WithoutParams_ShouldAccelerateCar()
+        public void Accelerate_ShouldAccelerateCar()
         {
             Car c = new Car(1999, 10000);
 
@@ -34,7 +34,7 @@ namespace TheVehicleAbstractClass.Unit.Tests
         }
 
         [TestMethod]
-        public void ToString_WithoutParam_ShouldDisplayCarData()
+        public void ToString_ShouldDisplayCarData()
         {
             Car c = new Car(1999, 10000);
 
